@@ -13,20 +13,32 @@ export const reducedMotion = () =>
 
 /** One Lenis instance, driven by the single GSAP ticker (no second rAF loop). */
 export function startSmoothScroll() {
-  if (reducedMotion()) return () => {};
-  const l = new Lenis({
-    duration: 1.15,
-    easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  });
-  lenis = l;
-  l.on('scroll', ScrollTrigger.update);
-  const tick = (time: number) => l.raf(time * 1000);
-  gsap.ticker.add(tick);
-  gsap.ticker.lagSmoothing(0);
+  const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let dispose = () => {};
+  const sync = () => {
+    dispose();
+    dispose = () => {};
+    if (preference.matches) return;
+    const l = new Lenis({
+      duration: 1.15,
+      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    });
+    lenis = l;
+    l.on('scroll', ScrollTrigger.update);
+    const tick = (time: number) => l.raf(time * 1000);
+    gsap.ticker.add(tick);
+    gsap.ticker.lagSmoothing(0);
+    dispose = () => {
+      gsap.ticker.remove(tick);
+      l.destroy();
+      if (lenis === l) lenis = null;
+    };
+  };
+  sync();
+  preference.addEventListener('change', sync);
   return () => {
-    gsap.ticker.remove(tick);
-    l.destroy();
-    if (lenis === l) lenis = null;
+    preference.removeEventListener('change', sync);
+    dispose();
   };
 }
 

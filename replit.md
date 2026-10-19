@@ -1,6 +1,6 @@
 # KiaraFun
 
-Official anime-inspired brand website for an upcoming Solana token launchpad.
+Product-first, anime-native website for an upcoming Solana token launchpad.
 
 ## Run & Operate
 
@@ -23,7 +23,8 @@ Official anime-inspired brand website for an upcoming Solana token launchpad.
 ## Where things live
 
 - `artifacts/kiarafun/` — complete responsive brand website.
-- `.local/conversation-workspace/files/attached_assets/` — original user-provided mascot and detailed creative brief.
+- `artifacts/kiarafun/public/assets/kiara-mascot.png` — official original mascot.
+- `attached_assets/Pasted--KIARAFUN-COMPLETE-CREATIVE-REBUILD-Premium-Solana-Laun_1792408632218.txt` — current creative requirements, superseding the initial brief.
 
 ## Architecture decisions
 
@@ -32,7 +33,7 @@ Official anime-inspired brand website for an upcoming Solana token launchpad.
 
 ## Product
 
-KiaraFun explores launch storytelling (Kiara Chapters), clearer launch information (Launch Transparency), and community-focused discovery (Kiara Spotlight). The launchpad is currently in development.
+KiaraFun is a Solana token launchpad in development, intended for creating community tokens, discovering launches, and following creator/community updates. Planned differences are richer token profiles, clearer verifiable launch information, and more expressive discovery. Conceptual interfaces must be explicitly labeled and must not fabricate live activity.
 
 ## User preferences
 
@@ -40,6 +41,8 @@ KiaraFun explores launch storytelling (Kiara Chapters), clearer launch informati
 - The supplied Kiara image is the official logo and mascot; use it for brand identity and derived favicon assets. Preserve the original character and background; do not regenerate, redesign, or replace it.
 - No emoji in designs or UI. Use official logos when displaying a logo alongside a named brand or service.
 - Keep the interface clean and concise, without raw technical details or nonessential information.
+- Keep the design product-first, not a generic anime portfolio or storytelling presentation. No decorative chapter/step numbering, public color swatches or hex codes, three-slide scroll presentation, or repeated giant-bold/red-italic headline formula.
+- Signature motion must be a single continuous scroll-scrubbed statement paired with a coherent conceptual launch interface, not separate text slides. Mobile uses natural flow; reduced-motion users receive fully readable content.
 
 ## Gotchas
 

@@ -1,0 +1,665 @@
+# KIARAFUN — COMPLETE CREATIVE REBUILD
+## Premium Solana Launchpad Website / V2
+
+You are taking over an existing React application for KiaraFun.
+
+Repository:
+https://github.com/luxeragit/KiaraFun-Anime-Solana-Landing-Page
+
+**This is not a styling improvement task. This is a complete creative-direction and product-experience rebuild.**
+
+The current website has failed to achieve the required level of visual quality, product clarity, originality, and scroll interaction.
+
+I want the visual refinement, intentional art direction, interaction engineering, and craftsmanship expected from a world-class digital product with a million-dollar creative ambition.
+
+Do not interpret that as permission to add expensive-looking decorations, more animations, more sections, or complicated graphics.
+
+High-end quality must come from composition, typography, meaningful interaction, excellent execution, and a recognizable original identity.
+
+Implement the redesign. Do not stop at a design proposal.
+
+## THE CENTRAL PROBLEM
+
+The current website feels like a generic AI-generated presentation about a brand.
+
+It contains oversized chapter numbers, generic motivational phrases, decorative diagrams, brand color charts, repeated marketing sections, and a final CTA that feels disconnected from the product.
+
+It explains ideas about storytelling instead of presenting KiaraFun as a real upcoming Solana launchpad.
+
+That must change completely.
+
+KiaraFun is a Solana token launchpad, inspired by the immediacy of platforms such as Pump.fun, with its own anime-native identity and planned product differentiation.
+
+The mascot is part of the identity. It must not become an excuse to build a generic anime portfolio.
+
+Visitors should understand within seconds:
+
+- KiaraFun is a Solana token launchpad.
+- Creators will be able to launch community tokens.
+- Users will be able to discover and participate in token launches.
+- KiaraFun is exploring richer token profiles, transparent launch details, and creator/community updates.
+- The launchpad is under development, not currently operational.
+
+The website should feel like a premium consumer crypto product, not a corporate presentation.
+
+## EXISTING REPOSITORY AUDIT
+
+The actual frontend is located in:
+
+`artifacts/kiarafun/`
+
+Important files:
+
+- `src/pages/home.tsx`
+- `src/components/hero.tsx`
+- `src/components/story.tsx`
+- `src/components/features.tsx`
+- `src/components/journey.tsx`
+- `src/components/meet-kiara.tsx`
+- `src/components/final-cta.tsx`
+- `src/components/nav.tsx`
+- `src/components/footer.tsx`
+- `src/components/faq.tsx`
+- `src/lib/motion.ts`
+- `src/index.css`
+
+Inspect the actual files before implementation.
+
+Preserve the working React/Vite/TypeScript application, project configuration, official mascot asset, and useful animation infrastructure.
+
+Rebuild the sections that do not meet the new direction.
+
+Do not modify unrelated server or workspace infrastructure.
+
+## MANDATORY REMOVALS
+
+Remove the current three-scene storytelling presentation.
+
+Remove all visible chapter and step numbering.
+
+There must be no decorative "01", "02", "03", "A", "B", or "C" used to organize visual sections, navigation, features, or timelines.
+
+Remove the giant outline numbers.
+
+Remove generic labels such as "Chapter 01 / The Idea".
+
+Remove the large numbered Journey diagram.
+
+Remove the visible brand palette from the Meet Kiara section.
+
+Specifically, `meet-kiara.tsx` contains a `SWATCHES` array that renders design-system information to visitors.
+
+Delete that visual section completely.
+
+Colors and hex codes belong in CSS and internal design documentation, not in the consumer landing page.
+
+Remove the current final CTA:
+
+"Your story starts here."
+
+Remove the "Next episode" presentation and framed mascot photo treatment.
+
+Remove the repeated giant bold headline plus red italic word formula.
+
+Remove unnecessary decorative circles, excessive sparkles, and generic abstract diagrams.
+
+Remove redundant explanations and marketing copy that do not communicate actual product functions.
+
+Delete unused components and styling after rebuilding, but preserve useful shared utilities.
+
+Do not preserve the old layout merely because it already exists.
+
+## NEW CREATIVE DIRECTION
+
+### Anime-native, product-first, premium editorial design
+
+Imagine a digital product combining:
+
+- The playful identity of a beautifully art-directed Japanese anime website
+- The clarity and immediacy of a modern Solana launchpad
+- The refined typography and spacing of a premium design studio
+- The interaction quality of an award-level motion-design website
+- The usability of a serious crypto consumer application
+
+The experience should be cheerful, energetic, distinctive, elegant, and incredibly smooth.
+
+It must never feel childish, chaotic, or artificially futuristic.
+
+Use the original Kiara mascot from:
+
+`public/assets/kiara-mascot.png`
+
+Preserve her original visual identity exactly.
+
+No newly generated anime characters.
+
+No fake 3D models.
+
+No stock imagery.
+
+No generated backgrounds that clash with the original illustration.
+
+Create supplementary visual elements using well-composed CSS and SVG if needed.
+
+Avoid default crypto illustrations such as floating coins, glowing blockchain networks, and generic token stacks.
+
+### Color and typography
+
+Retain the recognizable KiaraFun palette internally:
+
+- Sky blue
+- Cloud white
+- Red ribbon accents
+- Warm blonde and subtle orange details
+- Dark navy typography
+
+Color codes must never be shown to visitors.
+
+Use a disciplined typography system.
+
+Large display text should have a carefully tuned baseline, font weight, kerning, line height, and responsive behavior.
+
+Stop applying the same oversized bold typography treatment to every section.
+
+Avoid the repetitive pattern of italicizing the final word of each headline.
+
+Use expressive typography only where it meaningfully supports the composition.
+
+Some sections should be restrained and product-focused. Others may be more expressive.
+
+Establish deliberate visual contrast between them.
+
+## NEW PAGE ARCHITECTURE
+
+Build a shorter, more intentional experience.
+
+The sections must connect naturally.
+
+Avoid turning every topic into a separate full-screen section.
+
+### HERO — THE PRODUCT FIRST
+
+Create a completely new hero composition.
+
+The original Kiara mascot must remain visually important, but the hierarchy must make the launchpad identity immediately understandable.
+
+Hero copy:
+
+Headline:
+"Meet your new
+Solana launchpad."
+
+Supporting text:
+"Create tokens, discover new launches, and grow communities — with a little KiaraFun."
+
+Status:
+"Launchpad in development"
+
+Primary interactive CTA:
+"Explore the launch model"
+
+Secondary interactive CTA:
+"Why KiaraFun?"
+
+Both CTAs must scroll to meaningful, existing sections.
+
+Do not render a fake Launch App button that leads nowhere.
+
+Do not imply token creation or trading is already available.
+
+### Composition
+
+Do not build another standard left-text/right-image SaaS hero.
+
+Explore a more distinctive art-directed composition using scale, overlap, negative space, and editorial alignment.
+
+The mascot should feel embedded in the visual world.
+
+A controlled partial crop, edge-to-edge arrangement, or layered sky composition may work better than a square image container.
+
+Keep her face and red ribbon recognizable.
+
+Use the uploaded image naturally.
+
+Do not apply an obvious rectangular photo frame.
+
+Do not overload the hero with clouds, stars, decorative circles, and floating UI cards.
+
+One strong composition is more valuable than ten decorations.
+
+### Product identity element
+
+Introduce one compact, realistic conceptual launch interface inspired by the future KiaraFun application.
+
+For example, a beautifully designed token identity surface showing fields such as:
+
+Token Name
+Ticker
+Token Image
+Description
+Launch Configuration
+
+This can be a non-interactive design preview showing the future product's visual language.
+
+Do not fabricate token prices, token addresses, funding progress, holder counts, or trading history.
+
+Label conceptual product previews appropriately.
+
+The goal is for users to recognize a token launchpad rather than an abstract anime brand website.
+
+## THE MOST IMPORTANT CHANGE — CONTINUOUS SCROLL TYPOGRAPHY
+
+The old implementation in `src/components/story.tsx` is not acceptable.
+
+It uses three numbered scenes, each containing a separate statement, followed by transitions between them.
+
+That is not the desired experience.
+
+We want a **single continuous scroll-driven typography experience** in which the text and the surrounding product visualization evolve together.
+
+### Desired interaction
+
+As the user scrolls:
+
+A large sentence is already present in the viewport.
+
+The words begin in a low-emphasis state.
+
+Individual words or short phrases become fully emphasized in sequence, based directly on scroll progress.
+
+Previously revealed words remain readable as new words become active.
+
+The visual emphasis progresses naturally through a continuous block of typography.
+
+The page must not behave like a PowerPoint presentation.
+
+Do not switch between three unrelated full-screen text slides.
+
+Do not attach numbered chapter labels.
+
+Do not make text simply fade in all at once when it enters the viewport.
+
+The reveal must be genuinely scroll-scrubbed.
+
+### Product-focused copy
+
+Use this continuous typography:
+
+"Create your token.
+Launch on Solana.
+Give your community something to build around."
+
+This should feel like a single flowing editorial statement rather than three distinct slides.
+
+Adjust line breaks intentionally across viewport sizes.
+
+### Visual behavior
+
+Pair the progressive text with a carefully designed future token-launch interface.
+
+As the words become active, the conceptual product visualization may evolve:
+
+During the token-creation phrase, emphasize the token identity area.
+
+During the Solana-launch phrase, transition toward the launch configuration details.
+
+During the community phrase, reveal the token's future profile and creator-update area.
+
+Keep these interactions subtle and informative.
+
+Do not use fabricated blockchain records or mock trading data.
+
+The product visualization must remain visually coherent throughout the sequence.
+
+### Technical implementation
+
+Use GSAP ScrollTrigger.
+
+Drive emphasis through scroll progress using `scrub`.
+
+Apply ScrollTrigger to a continuous sequence, not separate numbered slide transitions.
+
+Use per-word or per-phrase opacity and color interpolation, combined with subtle vertical movement only where appropriate.
+
+A word should progress from low emphasis to full emphasis as its allocated scroll interval is reached.
+
+Use native-flow text semantics and preserve accessible reading order.
+
+If a sticky visual is necessary, keep pinning short, controlled, and responsive.
+
+The user must not feel trapped in a full-screen scroll scene.
+
+Do not create huge artificial blank spaces.
+
+Do not add large `+=330%` scroll distances merely to prolong the effect.
+
+The scroll should feel natural when moving forward, backward, or rapidly jumping through the page.
+
+On mobile, adapt the sequence to an efficient natural-flow progressive reveal rather than forcing the desktop pinning behavior.
+
+Provide a complete readable fallback for reduced motion.
+
+This section is the signature interaction of the website. Spend meaningful engineering and design effort on it.
+
+## THE LAUNCHPAD — SHOW WHAT THE PRODUCT WILL DO
+
+After the signature scroll sequence, bring visitors directly into the product.
+
+This is where the existing landing page needs the most improvement.
+
+Create a beautifully designed product presentation around KiaraFun's planned launchpad experience.
+
+Show the relationship between:
+
+**Create a token**
+
+Creators configure token identity and review launch settings.
+
+**Discover launches**
+
+Users explore new tokens and evaluate information before participating.
+
+**Follow its progress**
+
+Communities see meaningful token activity, creator updates, and launch milestones.
+
+Do not present these as three large numbered feature cards.
+
+Instead, create one coherent editorial product layout.
+
+Use a main interface surface supported by small, carefully composed text groups.
+
+The interface can resemble an authentic future KiaraFun launchpad, but must not contain fake live trading information.
+
+It should communicate:
+
+"This is the type of product we are building."
+
+Do not fill the section with lengthy essays.
+
+Every piece of copy should describe a user action, product capability, or important differentiator.
+
+## KIARAFUN'S DIFFERENTIATION
+
+Keep our three proposed product directions, but completely redesign how they are presented.
+
+### Richer token profiles
+
+A token should have more than a name, ticker, and price chart.
+
+The future KiaraFun profile can include creator updates, project identity, and verifiable milestones.
+
+### Clearer launch information
+
+Make important token mechanics easier to understand.
+
+The future interface can present supply, authorities, launch configuration, and relevant risk information where verifiable.
+
+Never suggest that transparency removes trading risk.
+
+### More expressive discovery
+
+Create an experience that makes it easier to discover interesting community launches through their identity and activity.
+
+Do not claim an algorithm or ranking system has already been implemented.
+
+### Presentation requirements
+
+Do not create three identical feature cards.
+
+Do not use oversized alphabet letters.
+
+Do not label sections "Chapter A", "Chapter B", or similar.
+
+Present these concepts through one or two intentionally composed layouts, using original graphical detail and meaningful microinteractions.
+
+Use short, human-sounding sentences.
+
+The website should be able to explain the differences quickly without requiring users to read a manifesto.
+
+A concise planned-feature indicator is acceptable when necessary, but do not repeat "Planned Feature" on every element.
+
+## KIARA'S PRESENCE
+
+Kiara is the mascot, not a separate fictional chatbot or unrelated product.
+
+Her personality should be visible throughout the design through subtle creative touches.
+
+Retain her short blonde hair, blue eyes, red ribbon, sailor-style outfit, and cheerful expression.
+
+Do not repeatedly place the same square image inside different cards across the landing page.
+
+Prefer one dominant hero appearance and only one additional carefully differentiated mascot appearance if it improves the composition.
+
+Use the red ribbon as a recurring brand motif where appropriate.
+
+Avoid excessive mascot duplication.
+
+Do not build a dedicated color-chart or design-system showcase.
+
+Avoid a long "Meet Kiara" section that explains only her personality and not the launchpad.
+
+Her presence should strengthen product recognition.
+
+## NAVIGATION
+
+Preserve the original idea of a floating glass-pill navbar.
+
+Improve its execution.
+
+The navbar should have carefully controlled transparency, backdrop blur, spacing, contrast, and proportions.
+
+Use:
+
+KiaraFun wordmark
+
+Launchpad
+Why KiaraFun
+FAQ
+
+A compact non-clickable "Coming Soon" indicator may appear where appropriate.
+
+Do not create a nonfunctional wallet or launch button.
+
+Every clickable navigation element must work.
+
+Remove decorative numbers from the mobile navigation.
+
+Avoid oversized mobile menu typography.
+
+Keep mobile interactions accessible, polished, and simple.
+
+## ENDING — REPLACE THE GENERIC FINAL CTA
+
+Completely delete the current "Your story starts here" visual.
+
+Do not replace it with another enormous motivational slogan.
+
+The ending should feel like a natural extension of the future launchpad product.
+
+Use a concise closing:
+
+"KiaraFun is coming to Solana."
+
+Supporting copy:
+"A new place to create, discover, and follow community launches."
+
+You can visually reference the KiaraFun identity through a beautiful, minimal composition.
+
+No polaroid image.
+
+No "to be continued" sticker.
+
+No giant bold headline with a single italic red word.
+
+No excessive sparkles or random decoration.
+
+Provide a useful action such as navigating back to the launch model.
+
+If official social URLs are present in configuration, use the real ones. Otherwise, omit those links.
+
+## FOOTER AND FAQ
+
+Simplify both.
+
+Keep a short FAQ that answers only practical questions about the product, blockchain, development status, and planned functionality.
+
+Avoid lengthy generic marketing explanations.
+
+Keep a proper risk disclosure.
+
+The footer should be visually understated and perfectly aligned with the rest of the site.
+
+Do not repeat the same tagline throughout the landing page.
+
+## MOTION ENGINEERING
+
+Preserve and improve the existing Lenis and GSAP integration from:
+
+`src/lib/motion.ts`
+
+Ensure exactly one smooth-scroll instance and one animation ticker integration.
+
+The existing ScrollTrigger selectors are sometimes global. Refactor section-specific animations to query elements within their own component root.
+
+Use GSAP contexts and cleanup correctly.
+
+Prevent duplicate timelines, memory leaks, lingering pinned elements, or broken animations during component unmount.
+
+Use smooth, restrained easing.
+
+Favor transforms and opacity for performant motion.
+
+Avoid excessive blur effects.
+
+Never create animation that hurts navigation or readability.
+
+### Motion quality
+
+The entire website should feel like a single connected canvas.
+
+Section boundaries should feel designed, not stacked.
+
+Movement should have continuity.
+
+A visual element should have a reason to move.
+
+Avoid generic repetitive fade-up animations on every paragraph.
+
+Avoid prolonged forced scrolling and excessively slow transitions.
+
+Hover interactions should be quick, tactile, subtle, and visually refined.
+
+Respect `prefers-reduced-motion`.
+
+## MOBILE QUALITY
+
+Design mobile as its own composition.
+
+Do not merely shrink the desktop.
+
+The mascot must remain recognizable and well-positioned.
+
+The progressive scroll typography must work with touch scrolling.
+
+Product visualizations must fit naturally on smaller screens.
+
+No horizontal overflow.
+
+No overlapping text.
+
+No tiny unreadable labels.
+
+No exaggerated headline sizes that break the layout.
+
+No desktop-only controls masquerading as functional mobile interactions.
+
+Test at 360px, 390px, 768px, 1024px, and 1440px.
+
+## COPYWRITING REQUIREMENTS
+
+All visible website text must be in English.
+
+Write like a real consumer product.
+
+Avoid generic AI-style copy and hollow marketing language.
+
+Avoid excessive use of:
+
+"journey"
+"imagination"
+"the next chapter"
+"your story starts here"
+"experience the future"
+"revolutionizing"
+"empowering communities"
+"unlock possibilities"
+"the future begins"
+
+Do not fill the page with statements that could describe literally any Web3 project.
+
+Prioritize:
+
+- Launching tokens on Solana
+- Exploring tokens
+- Creator participation
+- Launch transparency
+- Token identity
+- Community updates
+- Product usability
+
+Keep copy short and confident.
+
+Do not invent fees, tokenomics, launch dates, audit status, integrations, or production availability.
+
+## VALIDATION — NON-NEGOTIABLE
+
+Before declaring the redesign complete:
+
+1. Inspect the current components and write a short internal replacement plan.
+2. Implement the full new page, not just the hero.
+3. Remove old dead UI and unused CSS.
+4. Run TypeScript checking.
+5. Run the production build.
+6. Test all anchor navigation and responsive menus.
+7. Test the complete scrolling experience in both directions.
+8. Check the progressive word reveal at multiple scroll positions.
+9. Check that no text is accidentally hidden by GSAP initial states.
+10. Validate reduced-motion fallback.
+11. Take real desktop and mobile screenshots if browser automation is available.
+12. Examine the actual screenshots at top, middle, and bottom page positions.
+13. Fix awkward spacing, broken compositions, text wrapping, image cropping, and visual repetition.
+14. Verify that no internal design-system documentation, hex values, or palette labels are rendered to visitors.
+15. Verify that decorative chapter and step numbers are completely gone.
+
+Use screenshot-based design criticism, not only DOM or build checks.
+
+Do not declare visual verification complete unless screenshots were genuinely captured and reviewed.
+
+If screenshot tools are unavailable, explicitly report the limitation.
+
+## ACCEPTANCE CRITERIA
+
+The redesign fails if:
+
+- It still looks like the previous page with modified colors.
+- It still feels like a presentation about storytelling rather than a launchpad website.
+- It uses numbered chapters or giant decorative numbers.
+- It renders color swatches or hex codes.
+- It uses generic three-column SaaS cards.
+- The scroll effect is just a carousel of three text slides.
+- It contains meaningless AI-style marketing paragraphs.
+- It repeats the same headline composition everywhere.
+- It creates fake launchpad activity.
+- Mobile is a compressed desktop layout.
+- The mascot appears as a poorly integrated square image.
+- Animations are visually impressive but interfere with scrolling.
+- The project builds but has not been visually inspected where browser tools are available.
+
+The redesign succeeds only if visitors can immediately identify KiaraFun as a Solana launchpad, understand its future product concept, recognize its unique anime identity, and enjoy a smooth, coherent, professionally art-directed experience.
+
+**Implement a genuinely different design direction. Do not cosmetically repair the current website.**
+
+I expect a complete frontend creative rebuild with exceptional attention to visual composition, product identity, scroll continuity, responsive behavior, and interaction detail.
+
+Do not stop after writing a plan. Make the changes in the existing Replit project and show the finished result.
