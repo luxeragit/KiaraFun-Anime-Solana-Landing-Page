@@ -1,15 +1,15 @@
-# [Project name]
+# KiaraFun
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+Official anime-inspired brand website for an upcoming Solana token launchpad.
 
 ## Run & Operate
 
-- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
+- Run the website through the managed `artifacts/kiarafun: web` workflow.
 - `pnpm run typecheck` — full typecheck across all packages
 - `pnpm run build` — typecheck + build all packages
 - `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
 - `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string
+- This phase is frontend-only; the website does not require a database or external integrations.
 
 ## Stack
 
@@ -22,19 +22,24 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/kiarafun/` — complete responsive brand website.
+- `.local/conversation-workspace/files/attached_assets/` — original user-provided mascot and detailed creative brief.
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- Phase 1 is strictly the brand website. Do not implement token contracts, token creation, trading, wallet connection, registration, or backend services without a new requirement.
+- Product differentiators are planned, not live. Never invent fees, release dates, audit claims, token activity, or financial guarantees.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+KiaraFun explores launch storytelling (Kiara Chapters), clearer launch information (Launch Transparency), and community-focused discovery (Kiara Spotlight). The launchpad is currently in development.
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+- All visible website content must be in English.
+- The supplied Kiara image is the official logo and mascot; use it for brand identity and derived favicon assets. Preserve the original character and background; do not regenerate, redesign, or replace it.
+- No emoji in designs or UI. Use official logos when displaying a logo alongside a named brand or service.
+- Keep the interface clean and concise, without raw technical details or nonessential information.
 
 ## Gotchas
 

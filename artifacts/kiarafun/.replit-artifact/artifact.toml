@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "KiaraFun"
+description = "The official KiaraFun brand website: an expressive anime-inspired introduction to an upcoming Solana launchpad, with cinematic scroll storytelling and the original Kiara mascot."
+version = "1.0.0"
+id = "artifacts/kiarafun"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24350
+
+[services.development]
+run = "pnpm --filter @workspace/kiarafun run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/kiarafun", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/kiarafun/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24350"
+BASE_PATH = "/"

@@ -1,0 +1,753 @@
+# KIARAFUN — PREMIUM ANIME SOLANA LAUNCHPAD
+## Phase 1: Brand Website & Cinematic Landing Page
+
+You are a senior creative director, frontend engineer, interaction designer, and brand identity specialist.
+
+Build a production-quality, fully responsive landing page for **KiaraFun**, an anime-inspired token launchpad being developed on Solana Mainnet.
+
+The website must feel like a genuinely original, carefully art-directed digital product.
+
+It must NOT look like a generic AI-generated SaaS website, a common Web3 landing page, or a recycled Tailwind template.
+
+Our visual identity is based on the anime character image provided with this project.
+
+**Brand:** KiaraFun  
+**Blockchain:** Solana  
+**Category:** Token Launchpad  
+**Tagline:** Every Coin Has a Story.  
+**Personality:** Cheerful, expressive, imaginative, playful, welcoming, trustworthy, and premium.
+
+This phase is strictly focused on the landing page. Do not build token deployment contracts, trading engines, bonding curves, or fake launchpad functionality yet.
+
+---
+
+# 1. PRODUCT VISION
+
+KiaraFun is an upcoming Solana token launchpad that combines token creation, community storytelling, and transparent launch information.
+
+We want to offer a more expressive alternative to conventional meme-token launchpads.
+
+Our future product differentiation revolves around three concepts:
+
+### Kiara Chapters
+
+Each token has an evolving story.
+
+Future token pages can combine creator descriptions, development updates, community moments, and verifiable on-chain milestones in a chronological narrative.
+
+### Launch Transparency
+
+Future launch pages will make important token and launch information easier to inspect.
+
+This may include mint authority, freeze authority, token supply, creator allocation, holder concentration, applicable fees, launch configuration, and liquidity or graduation progress.
+
+Every displayed verification claim must ultimately be supported by actual on-chain data.
+
+### Kiara Spotlight
+
+A discovery experience designed to make interesting projects easier to find through their creative identity, authentic community activity, and development progress.
+
+Spotlight ranking mechanics have not been finalized. Do not imply that the service is already operational.
+
+These are planned product directions. The landing page must communicate them as the vision for KiaraFun, not as existing production functionality.
+
+The website should make people excited about KiaraFun without promising guaranteed financial returns, completely bot-free launches, or risk-free trading.
+
+---
+
+# 2. TECHNOLOGY STACK
+
+Use:
+
+- React with Vite
+- TypeScript
+- Tailwind CSS for styling infrastructure
+- GSAP with ScrollTrigger for advanced animations
+- Lenis for smooth continuous scrolling
+- Lucide React for small interface icons
+- CSS and SVG for custom visual details
+
+Use Bricolage Grotesque for expressive display typography and DM Sans for interface and body copy.
+
+You may introduce one additional carefully chosen typeface if it improves the overall art direction.
+
+Create reusable components without sacrificing visual individuality.
+
+The final implementation must be fast, accessible, responsive, and maintainable.
+
+All visible website content must be in English.
+
+---
+
+# 3. ORIGINAL MASCOT AND BRAND ASSETS
+
+The uploaded anime character is the official visual reference for KiaraFun.
+
+The character has:
+
+- Short, fluffy blonde hair
+- Large, expressive blue eyes
+- A recognizable oversized red hair ribbon
+- A blue-and-white sailor-style outfit
+- An orange necktie
+- A joyful, cheerful expression
+- A bright blue sky and cloud background
+
+Preserve the exact character design.
+
+Do not regenerate the character using AI.
+
+Do not substitute another anime character.
+
+Do not redesign her clothing, eyes, ribbon, or hairstyle.
+
+Store the uploaded original image in:
+
+`public/assets/kiara-mascot.png`
+
+If the original uploaded filename differs, copy it to the destination above without destructively changing its visual content.
+
+If a separate official logo is uploaded, use that logo unchanged.
+
+Otherwise create an original, clean KiaraFun typographic wordmark, accompanied by a minimal red ribbon symbol constructed with SVG.
+
+The wordmark must complement the original mascot instead of overpowering her.
+
+Avoid generic crypto-style branding.
+
+The mascot must be the main visual attraction, but the site should still feel like a serious and beautifully crafted product.
+
+---
+
+# 4. VISUAL ART DIRECTION
+
+The website needs a coherent anime-inspired identity without becoming childish, cluttered, or overwhelming.
+
+Primary colors:
+
+- Sky Blue: #2DA9F5
+- Ribbon Red: #FF515B
+- Sunshine Orange: #FFAA32
+- Cloud White: #F6FBFF
+- Soft Blonde: #FFE5A5
+- Deep Navy: #182B49
+
+Use sky blue and cloud white for most of the visual environment.
+
+Use red sparingly for important accents, inspired by Kiara's ribbon.
+
+Use orange only for warm supporting details.
+
+Dark navy should be the principal text color on light backgrounds.
+
+Avoid neon, cyberpunk gradients, heavy purple, and generic crypto dashboard styling.
+
+The visual language should include:
+
+- Beautiful editorial typography
+- Generous whitespace
+- Soft but deliberate color transitions
+- Original curved vector details
+- Fine decorative lines
+- Carefully controlled glass effects
+- Subtle anime-inspired graphic accents
+- Asymmetric compositions
+- Playful but sophisticated microinteractions
+
+No stock photos.
+
+No externally generated AI artwork.
+
+Additional illustrations should be created using thoughtfully designed SVG and CSS geometry.
+
+Do not populate the page with repetitive rounded cards or floating dashboard rectangles.
+
+Avoid excessive pill elements beyond the main navigation and selected interactive details.
+
+The entire page must look professionally designed, not assembled from a component library.
+
+---
+
+# 5. NAVIGATION — FLOATING GLASS PILL
+
+Create a beautifully designed floating navbar.
+
+Desktop behavior:
+
+- Horizontally centered near the top
+- Pill-shaped silhouette
+- Transparent frosted-glass background
+- Backdrop blur
+- Fine translucent border
+- Soft, realistic shadow
+- Clean and compact proportions
+- Floating appearance without being oversized
+
+Layout:
+
+LEFT:
+KiaraFun brand mark and wordmark.
+
+CENTER:
+About
+Features
+Journey
+FAQ
+
+RIGHT:
+"Meet Kiara" action.
+
+On hover, each navigation item should respond with subtle animation.
+
+Examples include a soft moving underline, background reveal, or slight position change.
+
+As the user scrolls, the navbar should subtly compress while maintaining comfortable spacing.
+
+The navbar must remain readable over every background transition.
+
+Every navigation item must smoothly scroll to an existing section.
+
+On mobile, create a carefully designed compact navigation with a functional accessible menu.
+
+Do not use an ordinary generic full-width solid navbar.
+
+---
+
+# 6. HERO — THE FIRST IMPRESSION
+
+The hero is the most important visual part of the website.
+
+It should feel like opening the first scene of a beautifully animated anime-inspired digital experience.
+
+Desktop composition:
+
+LEFT:
+Large expressive typography and concise product introduction.
+
+RIGHT:
+A large presentation of the original Kiara mascot.
+
+The mascot should feel integrated into the atmosphere rather than placed inside a generic card.
+
+Use the blue sky from the original uploaded image intelligently.
+
+Create a surrounding environment that visually blends with the supplied image.
+
+Do not artificially remove or damage the mascot's background.
+
+Use careful cropping and positioning, without cutting off important facial features or the signature red ribbon.
+
+Suggested content:
+
+Eyebrow:
+"A LITTLE DIFFERENT. A LOT MORE FUN."
+
+Main headline:
+"Every Coin
+Has a Story."
+
+Supporting text:
+"Meet KiaraFun — an upcoming Solana launchpad where creative ideas, transparent launches, and communities come together."
+
+Primary CTA:
+"Discover KiaraFun"
+
+Secondary CTA:
+"How It Works"
+
+Small status:
+"Currently in development · Built for Solana"
+
+Do not say the platform is live.
+
+### Hero animation
+
+On initial load:
+
+1. The background appears smoothly.
+2. The navigation fades into place.
+3. The headline reveals line by line.
+4. The supporting text appears with a slight delay.
+5. The mascot enters with a gentle, carefully eased motion.
+6. Decorative accents animate into their final positions.
+
+The animation should feel polished and natural.
+
+Add a subtle floating or breathing motion to the mascot presentation, without moving the character excessively.
+
+A decorative cloud or ribbon-shaped SVG element may respond slightly to cursor movement on desktop.
+
+The hero must not feel overloaded with animation.
+
+Include a minimal scroll indicator.
+
+---
+
+# 7. THE MAIN EXPERIENCE — CONTINUOUS SCROLL STORYTELLING
+
+This requirement is extremely important.
+
+I do not want a conventional website where users scroll through unrelated rectangular sections.
+
+I want a continuous, connected scroll experience.
+
+The page should unfold like an interactive story.
+
+Use GSAP ScrollTrigger and Lenis to connect sections into one visual narrative.
+
+Implement a specially designed scroll storytelling sequence.
+
+On desktop, use a carefully controlled pinned section where multiple text statements appear progressively while the environment changes.
+
+The sequence:
+
+### SCENE 01 — THE SPARK
+
+Small label:
+"CHAPTER 01 / THE IDEA"
+
+Large text:
+"Every great launch starts with a little imagination."
+
+The text should reveal progressively as the user scrolls.
+
+A thin decorative line extends alongside the typography.
+
+### SCENE 02 — THE PROOF
+
+Small label:
+"CHAPTER 02 / THE DETAILS"
+
+Large text:
+"A good story deserves a clearer launch."
+
+The previous text elegantly moves or fades away.
+
+The next statement appears in its place.
+
+The visual background transitions toward a lighter cloud-white environment.
+
+### SCENE 03 — THE COMMUNITY
+
+Small label:
+"CHAPTER 03 / THE PEOPLE"
+
+Large text:
+"The next chapter belongs to everyone."
+
+Introduce small, original decorative graphic elements that visually suggest a growing community.
+
+Do not use generic 3D coins or stock crypto illustrations.
+
+### Animation behavior
+
+- Each statement must respond to scroll progress.
+- Text reveals should be smooth and readable.
+- Use restrained masking, clipping, or line-by-line transitions.
+- Avoid excessive character-by-character animations.
+- Keep movement fluid with carefully managed easing.
+- The user must be able to scroll both forward and backward naturally.
+- Do not hijack scrolling.
+- Do not add artificial delays between sections.
+- Avoid layout jumps when pinning begins or ends.
+
+On mobile, simplify pinned animations into natural scroll-triggered reveals.
+
+Keep all essential text accessible and visible even if JavaScript animation fails.
+
+Support reduced-motion preferences.
+
+---
+
+# 8. WHY KIARAFUN — PRODUCT DIFFERENTIATION
+
+Create a distinctive feature presentation, not a typical three-column feature-card grid.
+
+Use alternating asymmetric compositions, original SVG illustrations, oversized typography, and subtle motion.
+
+## Feature A — Kiara Chapters
+
+Headline:
+"More than a ticker."
+
+Description:
+"Give every launch a beginning, a personality, and a journey worth following."
+
+Supporting detail:
+"Creator stories, community updates, and on-chain milestones — brought together in one evolving experience."
+
+Visual direction:
+An editorial timeline concept that gradually reveals its chapters while scrolling.
+
+It must be conceptual, not populated with fake token transactions.
+
+## Feature B — Launch Transparency
+
+Headline:
+"The details should never be a mystery."
+
+Description:
+"Important launch information deserves to be easy to find, understand, and verify."
+
+Supporting detail:
+"Explore the vision for clearer token mechanics, visible launch conditions, and on-chain checkpoints."
+
+Visual direction:
+Minimal, elegant information rails and verification-inspired line graphics.
+
+Do not show fabricated audit badges, fictional contract addresses, invented safety ratings, or unverified trust scores.
+
+## Feature C — Kiara Spotlight
+
+Headline:
+"Find the next story worth following."
+
+Description:
+"Discovery should be about more than numbers. Explore a future where creativity and genuine community activity matter."
+
+Visual direction:
+An original editorial feature using carefully arranged typography and soft animated graphic shapes.
+
+Avoid fake token listings and fabricated trading statistics.
+
+Include a subtle "Planned Feature" label for features not implemented.
+
+---
+
+# 9. JOURNEY — HOW KIARAFUN WILL WORK
+
+Create a clean, connected horizontal narrative on desktop.
+
+On mobile, transform it into a vertically connected progression.
+
+Three stages:
+
+01 — Create
+
+"Start with an idea."
+
+"Bring your token concept, identity, and story to life."
+
+02 — Launch
+
+"Take the first step on-chain."
+
+"Publish your launch with visible mechanics and a clear journey ahead."
+
+03 — Grow
+
+"Write the next chapter together."
+
+"Follow milestones, share updates, and build a community around your creation."
+
+These describe the intended future product journey.
+
+Do not implement nonfunctional token creation buttons in this phase.
+
+Do not imply that token deployment is available yet.
+
+Use a custom connecting path, with a subtle stroke drawing effect tied to scroll position.
+
+---
+
+# 10. MEET KIARA — CHARACTER SECTION
+
+Create a special section dedicated to Kiara.
+
+This should feel warmer, more expressive, and more personal than the rest of the website.
+
+Use the original mascot image again, carefully composed in a new layout.
+
+The section should be visually different from the hero while maintaining perfect brand consistency.
+
+Suggested headline:
+"Say hello to Kiara!"
+
+Supporting copy:
+"Bright ideas, bold beginnings, and a whole lot of fun. Kiara is here to make every new story feel a little more exciting."
+
+Add a small decorative red ribbon graphic that responds gently to scrolling or hover.
+
+Do not make the character speak with a fake chatbot.
+
+Do not create a nonfunctional chat interface.
+
+This is a brand introduction, not an AI companion product.
+
+---
+
+# 11. FINAL CALL TO ACTION
+
+Create a strong, memorable closing section.
+
+The visual environment should subtly reconnect to the bright blue sky established in the hero.
+
+Large headline:
+
+"Your story starts here."
+
+Supporting text:
+
+"A more expressive way to launch on Solana is taking shape."
+
+Primary button:
+"Back to the Beginning"
+
+This button must smoothly scroll back to the hero.
+
+Secondary button:
+"Explore the Vision"
+
+This button must scroll to the product differentiation section.
+
+The closing should feel like the end of an anime opening sequence, not a generic enterprise CTA block.
+
+---
+
+# 12. FAQ
+
+Create a minimal accordion with smooth height transitions.
+
+Use the following questions and concise English answers:
+
+**What is KiaraFun?**
+
+KiaraFun is an upcoming Solana token launchpad exploring a more creative and transparent way to bring community tokens to life.
+
+**Is KiaraFun live?**
+
+Not yet. The platform is currently in development.
+
+**What makes KiaraFun different?**
+
+Our vision combines launch storytelling, clearer token information, and a community-focused discovery experience.
+
+**Which blockchain will KiaraFun support?**
+
+KiaraFun is being designed for Solana Mainnet.
+
+**Will I need a wallet?**
+
+Wallet interaction is planned for the future launchpad application. The landing page does not require a wallet connection.
+
+Do not invent product availability dates, fees, integrations, security reviews, or tokenomics.
+
+---
+
+# 13. FOOTER
+
+Create a refined footer that matches the brand identity.
+
+Include:
+
+- KiaraFun wordmark
+- Tagline: "Every Coin Has a Story."
+- Navigation links to existing sections
+- Solana ecosystem reference
+- Current year, generated dynamically
+- Concise risk disclosure
+
+Do not invent social media URLs.
+
+Only include external social links once actual URLs are configured.
+
+Do not create dead buttons or placeholder social destinations.
+
+---
+
+# 14. MOTION DESIGN SYSTEM
+
+The website must feel consistently alive, but never distracting.
+
+Required animations:
+
+### Scroll
+
+- Lenis-based smooth scrolling
+- GSAP ScrollTrigger integration
+- Progressive headline reveals
+- Continuous section transitions
+- Subtle background movement
+- Carefully controlled parallax
+- Original SVG line-drawing animations
+
+### Hover
+
+- Soft typography motion
+- Subtle button displacement
+- Small directional icon transitions
+- Smooth navigation states
+- Gentle interactive highlights
+
+### Page transitions
+
+- Cohesive transitions between backgrounds
+- No abrupt layout changes
+- No excessive fade-in animation on every paragraph
+
+### Performance
+
+Use GPU-friendly transform and opacity animations where possible.
+
+Avoid unnecessary blur animation on large layers.
+
+Ensure GSAP triggers refresh correctly after image loads and responsive layout changes.
+
+Properly clean up animation contexts in React components.
+
+Synchronize Lenis and ScrollTrigger without creating multiple animation loops.
+
+Animations must pause or simplify appropriately for users who prefer reduced motion.
+
+Avoid enormous animation libraries beyond what is necessary.
+
+---
+
+# 15. RESPONSIVE EXPERIENCE
+
+Desktop, tablet, and mobile must be designed intentionally.
+
+Do not simply shrink desktop layouts.
+
+### Desktop
+
+- Strong asymmetric compositions
+- Large expressive headings
+- Cinematic mascot placement
+- Full continuous scroll storytelling
+- Floating pill navigation
+
+### Tablet
+
+- Rebalanced mascot and typography
+- Reduced animation movement
+- Comfortable reading widths
+- Responsive navigation
+
+### Mobile
+
+- Elegant portrait-oriented hero
+- Beautifully positioned mascot
+- No cropped eyes or face
+- Readable headline without awkward word breaks
+- Compact floating navigation
+- Naturally flowing scroll sequences
+- Comfortable touch targets
+- No horizontal overflow
+
+Test at minimum:
+
+- 1440px desktop
+- 1024px tablet
+- 768px tablet
+- 390px mobile
+- 360px mobile
+
+Never allow text to overlap the mascot's face.
+
+---
+
+# 16. STRICT QUALITY REQUIREMENTS
+
+Do not build a generic AI-looking landing page.
+
+Specifically avoid:
+
+- Repetitive three-column rounded cards
+- Generic dark purple gradients
+- Fake analytics dashboards
+- Random floating cryptocurrency coins
+- Excessive glassmorphism
+- Oversized meaningless whitespace
+- Stock-like illustrations
+- Neon glow
+- Overused glowing borders
+- Emoji used as product icons
+- Placeholder testimonials
+- Fake token prices
+- Fake transaction activity
+- Fake launch statistics
+- Fabricated achievements
+- Unsupported claims of audits or security guarantees
+- Nonfunctional buttons
+- Unnecessary sidebar navigation
+
+Every design decision should be consistent with KiaraFun's character, colors, narrative, and product identity.
+
+Prefer sophisticated composition over excessive decoration.
+
+The target is the finish and visual originality of an independently art-directed, premium consumer product.
+
+---
+
+# 17. IMPLEMENTATION BOUNDARIES
+
+This is Phase 1.
+
+Implement only the website and working interactions.
+
+Do not:
+
+- Deploy smart contracts
+- Create a fake trading terminal
+- Build a simulated token creator
+- Introduce mock wallet balances
+- Connect unsupported blockchain services
+- Pretend on-chain features are functional
+- Create fake registration forms
+- Invent integrations
+- Add databases or backend services without a real requirement
+
+The landing page must be fully functional within its actual scope.
+
+All anchor links, animations, navigation controls, mobile menus, and FAQ interactions must work.
+
+Keep the project organized so we can add a real Solana launchpad application in a future phase.
+
+---
+
+# 18. FINAL VERIFICATION
+
+Before reporting completion:
+
+1. Install all required dependencies.
+2. Run the development server.
+3. Verify that the original Kiara image loads correctly.
+4. Verify all navigation anchors.
+5. Verify every CTA.
+6. Test the complete scroll story in both directions.
+7. Check for GSAP pinning and layout issues.
+8. Verify responsive layouts.
+9. Check keyboard navigation and accessibility.
+10. Check reduced-motion behavior.
+11. Check browser console errors.
+12. Run the production build successfully.
+13. Capture desktop and mobile screenshots using an available browser tool.
+14. Inspect the screenshots and correct obvious layout or typography issues.
+
+Do not claim that screenshot testing or visual verification was performed unless it actually happened.
+
+If browser screenshot tools are unavailable, report that limitation clearly.
+
+## FINAL EXPECTATION
+
+Deliver a complete, working KiaraFun landing page with:
+
+- A distinctive anime-inspired identity
+- Exact use of the provided Kiara mascot
+- A premium floating glass navigation
+- Expressive editorial typography
+- Continuous cinematic scroll storytelling
+- Seamlessly connected visual sections
+- Original interactions and hover details
+- Fully responsive composition
+- Clear product differentiation
+- English-only website copy
+- Honest communication about planned features
+- No fake product functionality
+
+Focus on quality over speed.
+
+Build the full landing page, not just a static hero mockup.
+
+**KiaraFun should look like an original anime-inspired digital world designed by a professional creative studio — playful enough to feel memorable, but polished enough to become a serious Solana launchpad brand.**
