@@ -1,5 +1,5 @@
 import { useId, useState } from 'react';
-import { Plus } from 'lucide-react';
+import { PlusIcon as Plus } from './icons';
 import { ScrollTrigger } from '@/lib/motion';
 
 const ITEMS = [

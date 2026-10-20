@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { ArrowDown, ArrowRight } from 'lucide-react';
+import { ArrowDownIcon as ArrowDown, ArrowRightIcon as ArrowRight } from './icons';
 import { AnchorLink } from './anchor-link';
 
 type Props = { id: string; children: ReactNode; testId: string; variant?: 'primary' | 'ghost'; arrow?: 'right' | 'down' };

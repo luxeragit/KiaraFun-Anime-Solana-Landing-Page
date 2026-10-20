@@ -41,6 +41,7 @@ KiaraFun is a Solana token launchpad in development, intended for creating commu
 - The supplied Kiara image is the official logo and mascot; use it for brand identity and derived favicon assets. Preserve the original character and background; do not regenerate, redesign, or replace it.
 - No emoji in designs or UI. Use official logos when displaying a logo alongside a named brand or service.
 - Keep the interface clean and concise, without raw technical details or nonessential information.
+- Use polished, expressive icons that suit each function and feel consistent across the website; avoid basic generic icon styling.
 - Keep the design product-first, not a generic anime portfolio or storytelling presentation. No decorative chapter/step numbering, public color swatches or hex codes, three-slide scroll presentation, or repeated giant-bold/red-italic headline formula.
 - Signature motion must be a single continuous scroll-scrubbed statement paired with a coherent conceptual launch interface, not separate text slides. Mobile uses natural flow; reduced-motion users receive fully readable content.
 

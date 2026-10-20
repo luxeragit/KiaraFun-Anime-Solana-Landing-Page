@@ -1,4 +1,4 @@
-import { ImagePlus } from 'lucide-react';
+import { ImageIcon as ImagePlus } from './icons';
 import { Ribbon } from './art';
 
 export type Phase = 'token' | 'config' | 'profile' | 'all';

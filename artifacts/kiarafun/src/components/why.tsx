@@ -1,3 +1,4 @@
+import { CheckIcon } from './icons';
 import { useState } from 'react';
 
 const ITEMS = [
@@ -22,7 +23,7 @@ function Diagram({ id }: { id: string }) {
           <li key={l} className="flex items-center justify-between py-3 text-sm font-semibold text-k-navy">
             {l}
             <span className="grid size-5 place-items-center rounded-full border border-k-navy/40">
-              <svg viewBox="0 0 12 12" className="size-2.5" aria-hidden="true"><path d="M2 6.2l2.6 2.6L10 3.4" fill="none" stroke="#ff515b" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              <CheckIcon className="size-2.5 text-[#ff515b]" aria-hidden="true" />
             </span>
           </li>
         ))}

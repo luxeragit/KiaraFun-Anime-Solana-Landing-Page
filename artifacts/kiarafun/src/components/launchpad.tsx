@@ -1,5 +1,5 @@
 import { useRef, useState, type KeyboardEvent } from 'react';
-import { Compass, Newspaper, Rocket } from 'lucide-react';
+import { CompassIcon as Compass, NewsIcon as Newspaper, RocketIcon as Rocket } from './icons';
 import { Ribbon } from './art';
 
 const TABS = [

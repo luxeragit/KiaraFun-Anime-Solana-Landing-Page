@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { MenuIcon as Menu, CloseIcon as X } from './icons';
 import { AnchorLink } from './anchor-link';
 import { BrandMark, Wordmark } from './art';
 
